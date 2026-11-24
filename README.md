@@ -43,18 +43,13 @@ CLAUDE.md          Instructions for generating content with Claude Code
 content/           Participant material: explainers, hands-on sheets, sample documents
   session-1/       Blocks 1 to 4
   session-2/       Blocks 5 to 8
-trainer-only/      Demo scripts, answer keys, trainer notes, session plan (not in the repository)
 ```
-
-## Trainer-only material
-
-Answer keys, demo scripts, trainer notes and the minute-by-minute session plan are kept in `trainer-only/`. That folder is listed in `.gitignore`, so it is never committed or shared. Do not move trainer material into `content/`: participant files must never contain answers.
 
 ## Conventions
 
 - **File header.** Every file starts with a front-matter block: title, session, block, type, duration and audience.
 - **Duration.** The `duration` in a header is the time that file gets on the agenda. For a hands-on, it includes the trainer's briefing and debrief.
-- **File types.** `explainer.md`, `handson.md`, `handson-answers.md`, `demo-script.md`, `quiz.md` and `trainer-notes.md`. Names are lowercase, with hyphens.
+- **File types.** `explainer.md`, `handson.md` and `quiz.md`. Names are lowercase, with hyphens.
 - **Running case.** ClaimAssist, a fictional claims assistant from the fictional vendor Nimbus AI Solutions Ltd, grows through three versions: chat, chat with documents, and agent. Its fixed facts are listed in [CLAUDE.md](CLAUDE.md) and must not be contradicted.
 - **Style.** Plain British English, short sentences, one everyday analogy per idea. No emojis, and no code in participant files.
 - **Diagrams.** Mermaid, using the colour classes defined in [CLAUDE.md](CLAUDE.md). They render on GitHub, and in VS Code with the Markdown Preview Mermaid Support extension.
@@ -67,13 +62,12 @@ Answer keys, demo scripts, trainer notes and the minute-by-minute session plan a
 Create the explainer and hands-on for Session 2, Block 8 (capstone).
 ```
 
-After any change, check that the header duration still matches the timing table in the matching answer key and the slot in the session plan.
+After any change, check that the header duration still fits the time the block has on the agenda.
 
 ## Still to write
 
-- Block 8 capstone: the UW Copilot proposal, the hands-on sheet and the answer key.
+- Block 8 capstone: the UW Copilot proposal and the hands-on sheet.
 - Shared files in `content/00-shared/`: the ClaimAssist case, glossary and evaluation checklist.
-- Demo scripts for Blocks 2, 4, 6 and 7.
 - Quizzes.
 
 ## Data and scope
